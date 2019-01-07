@@ -1,0 +1,171 @@
+/* ----------- global styles ------------ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus,
+*:active {
+  border: 0;
+  outline: 0;
+}
+
+html,
+body {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica",
+    sans-serif;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  padding: 14px 0;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 10px 0;
+}
+p {
+  font-size: 14px;
+  padding: 10px 0;
+}
+label {
+  padding: 10px 0;
+}
+input[type="text"],
+input[type="number"] {
+  padding: 7px 5px;
+  background: #eeeeee;
+  border-top: 2px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  border-left: 2px solid #c8c8c8;
+}
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: 0;
+}
+a {
+  color: #005ea5;
+  display: inline-block;
+  text-decoration: underline;
+}
+button {
+  margin: 12px 0;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 0;
+}
+.btn-green {
+  color: #ffffff;
+  background: #008656;
+}
+a.navlink-gray,
+.navlink-gray > * a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #747171;
+  margin-right: 8px;
+}
+
+.mar-t-b-45 {
+  margin: 45px 0;
+}
+
+/* ----------- module specific styles ------------ */
+.pg-container {
+  border-top: 4px solid #e68888;
+  padding: 0 30px;
+}
+.site-header {
+  border-top: 12px solid #005ea5;
+  padding: 20px 0;
+}
+.site-header::before {
+  content: "";
+  padding: 4px 15px;
+  border-left: 2px solid #005ea5;
+  margin-right: 3px;
+  background: url(../img/icon-crown.png) no-repeat 7px 3px/20px 20px;
+}
+.fm-tax-renew > * {
+  display: block;
+}
+input[name="insurance-number"] {
+  width: 104px;
+  margin-bottom: 30px;
+}
+.site-footer {
+  position: relative;
+  background: #dee0e2;
+  padding: 150px 30px 50px;
+  margin: 0 -30px 50px -30px;
+}
+a.icon-ogl {
+  font-size: 0px;
+  padding: 19px 25px;
+  background: url(../img/ogl.png) no-repeat left top;
+}
+.copyright {
+  display: table;
+  width: 146px;
+  height: 140px;
+  background: url(../img/crown-copyright.png) no-repeat left top;
+  position: absolute;
+  bottom: 75px;
+  right: 30px;
+}
+.copyright span {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+/*------------ responsive changes for mobile devices ------------- */
+@media only screen and (max-device-width: 900px) {
+  /* ----------- global ------------ */
+  h1 {
+    font-size: 5rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.7rem;
+  }
+  label {
+    font-size: 1.8rem;
+  }
+  .site-footer p,
+  .site-footer a {
+    font-size: 1.2rem;
+  }
+  input[type="text"],
+  input[type="number"] {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+  }
+  button {
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+  }
+
+  /* ----------- modules ------------ */
+  .copyright {
+    position: initial;
+    margin: 20px auto 0 auto;
+  }
+  a.icon-ogl {
+    font-size: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+   /* ----------- modules ------------ */
+  .copyright {
+    position: initial;
+    margin: 20px auto 0 auto;
+  }
+  a.icon-ogl {
+    font-size: 0;
+  }
+}
